@@ -8,5 +8,5 @@
     - FTP 
 - make plan
     - CMS
-    - template 
+        - joomla
 - implement
