@@ -17,8 +17,150 @@
 /* #Site Styles
 ================================================== */
 
+body
+{
+	background: #35315d;
+}
+
+#header, 
+#footer, 
+#artists, 
+h3
+{
+	text-align: center;
+}
+
+#header 
+{ 
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+#banner
+{
+	width: 100%;
+}
+
+#subtitle 
+{ 
+	font-size: 1.5em;
+	font-style: italic; 
+} 
+
+#header,
+#footer
+{
+	background: #409ae6; 
+}
+
+#footer 
+{ 
+	padding-top: 10px;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	-moz-border-radius-topright: 25px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+} 
+
+.content
+{
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+/*div
+{
+	background: #4c4681;
+}
+*/
+
+nav { 
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 10px; 
+} 
+
+nav a {
+	font-size: 2em;	
+	margin-right: 10px;
+	font-family: 'Sail', cursive;
+} 
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6, 
+#footer a
+{
+	font-family: 'Sail', cursive;
+}
+
+p, 
+a,
+li
+{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+h3
+{
+	font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+#footer a:hover,
+#header a:hover,
+.selected
+{
+	color: white; 
+}
+
+p, 
+a
+{
+	font-size: 16px; 
+}
+
+#footer a,
+#header a
+{
+	color: #4c4681;
+}
+
+a {
+	color: #409ae6;
+	text-decoration: none;
+} 
+
+a:hover {
+	color: white; 
+}
+
+
+
 /* #Page Styles
 ================================================== */
+
+#artists a
+{ 
+	font-size: 25px;
+	font-family: 'Sail', cursive;
+} 
 
 /* #Media Queries
 ================================================== */

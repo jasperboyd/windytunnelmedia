@@ -4,13 +4,15 @@
 
 ##todo 
 
-- Website banner
+
+- when page is small switch to logo 
+- place logo somewhere on the page 
+- setup text styling 
+- Artists page
+- blog page
+- store page
 - set shit up 
     - FTP 
-- make plan
-    - CMS
-        - joomla
-- implement
 
 #colors
 
