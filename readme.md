@@ -7,13 +7,15 @@
 
 - when page is small switch to logo 
 - place logo somewhere on the page 
-- setup text styling 
 - Artists page
+    - TPC
+    - Halfs
+    - MT
 - blog page
+    - Build wordpress theme 
 - store page
-- set shit up 
-    - FTP 
-
+    - setup 
+    
 #colors
 
 - Dark Purple - __#35315d__
