@@ -279,7 +279,8 @@ a:hover {
 #nnf, 
 #dream, 
 #seabirds,
-#logo
+#logo,
+#sotf
 { 
 	width: 100%; 
 	height: 100%;
@@ -287,6 +288,13 @@ a:hover {
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 } 
+
+#sotf
+{
+	max-width: 250px;
+	display: block; 
+	margin: 0 auto;
+}
 
 #featuredart
 { 
@@ -299,7 +307,7 @@ a:hover {
 	border-radius: 20px;
 } 
 
-#nnfbanner
+.artistbanner
 {
 	width: 95%;
 	display: block; 
