@@ -6,7 +6,6 @@
 
 
 - when page is small switch to logo 
-- place logo somewhere on the page 
 - Artists page
     - TPC
     - Halfs
@@ -14,7 +13,8 @@
 - blog page
     - Build wordpress theme 
 - store page
-    - setup 
+    - style 
+    - add products
     
 #colors
 

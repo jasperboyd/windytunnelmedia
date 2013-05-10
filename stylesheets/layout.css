@@ -115,6 +115,11 @@ nav a {
 	font-family: 'Sail', cursive;
 } 
 
+button { 
+	margin: 0 auto; 
+	display: block;
+} 
+
 h1, 
 h6, 
 #footer a
@@ -133,9 +138,15 @@ li
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
+h2
+{ 
+	font-weight: 300; 
+} 
+
 h3
 {
 	font-size: 30px;
+	font-weight: 700; 
 }
 
 h6, 
@@ -163,6 +174,8 @@ p,
 a
 {
 	font-size: 16px; 
+	font-weight: 300; 
+	line-height: 125%;
 }
 
 #footer a,
@@ -180,11 +193,6 @@ a:visited
 
 a:hover {
 	color: white; 
-}
-
-p
-{
-	line-height: 110%;
 }
 
 .center 
@@ -224,11 +232,6 @@ p
 	font-size: 20px;
 }
 
-#about
-{
-	text-align: center;
-} 
-
 #featured
 { 
 	 box-sizing:border-box;
@@ -247,18 +250,19 @@ p
 	width: 75%;
 	display: block; 
 	margin: 0 auto; 
+	font-weight: 700;
 } 
 
 #featured a, 
 #featured a:visited 
 { 
 	color: #35315d;
+	font-weight: 700;
 } 
 
 #featured a:hover
 { 
 	color: #4c4681;
-	text-shadow: 1px 1px 1px white;
 } 
 
 #featured h3 
