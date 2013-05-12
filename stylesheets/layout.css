@@ -64,7 +64,7 @@ h3
 
 #subtitle 
 { 
-	font-size: 2em;
+	font-size: 1.25em;
 	font-style: italic; 
 } 
 
@@ -78,7 +78,8 @@ h3
 #footer 
 { 
 	padding-top: 15px;
-	height: 65px;
+	padding-bottom: 15px;
+	height: 100%;
 	-webkit-border-top-left-radius: 25px;
 	-webkit-border-top-right-radius: 25px;
 	-moz-border-radius-topleft: 25px;
@@ -118,11 +119,18 @@ nav a {
 button { 
 	margin: 0 auto; 
 	display: block;
+	border: 2px solid white; 
+	color: white; 
+	background-color: #409ae6;
 } 
 
-h1, 
-h6, 
-#footer a
+button:hover { 
+	background-color: #35315d;
+	border: 2px solid white; 
+	color: white;
+} 
+
+h1
 {
 	font-family: 'Sail', cursive;
 }
@@ -131,9 +139,12 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p,
 a,
-li
+li, 
+#selfpromotion, 
+button
 {
 	font-family: 'Merriweather Sans', sans-serif;
 }
@@ -150,9 +161,10 @@ h3
 }
 
 h6, 
-#footer a
+#selfpromotion a
 {
-	font-size: 25px;
+	color: white;
+	font-size: 12px;
 }
 
 h1,
@@ -160,12 +172,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p,
 li,
 #footer a:hover,
 #header a:hover,
-.selected
+.selected, 
+#selfpromotion
 {
 	color: white; 
 }
