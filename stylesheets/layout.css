@@ -93,8 +93,8 @@ h3
 
 .content
 {
-	margin-top: 10px; 
-	margin-bottom: 10px;
+	padding-top: 10px; 
+	padding-bottom: 10px;
 }
 
 /*div
@@ -111,7 +111,7 @@ nav {
 } 
 
 nav a {
-	font-size: 4em;	
+	font-size:  2em;	
 	margin-right: 10px;
 	font-family: 'Sail', cursive;
 } 
@@ -230,6 +230,11 @@ a:hover {
 .small
 { 
 	font-size: .9em;
+} 
+
+.initblank
+{ 
+	display: none;
 } 
 
 
