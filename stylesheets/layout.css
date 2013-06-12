@@ -108,6 +108,8 @@ nav {
 nav a {
 	font-size:  2em;	
 	margin-right: 10px;
+	display: inline-block;
+	line-height: 125%;
 	font-family: 'Sail', cursive;
 } 
 
@@ -196,7 +198,11 @@ a
 #header #artistslink:hover,
 #header #artistslink:visited:hover,
 #header .artsel, 
-#header .artsel:visited
+#header .artsel:visited,
+#header #bloglink:hover, 
+#header #bloglink:visited:hover,
+#header #storelink:hover, 
+#header #storelink:visited:hover
 { 
 	color: #35315d;
 } 
@@ -289,6 +295,7 @@ a:hover {
 #artists a, 
 #artists a:visited
 { 
+	display: inline-block;
 	line-height: 200%;
 	font-size: 1.5em;
 	padding: 0 8px 0 8px;
