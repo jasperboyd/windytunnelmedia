@@ -22,7 +22,9 @@
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link href='http://fonts.googleapis.com/css?family=Sail|Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
-
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
+	<script src="js/main.js"></script>  
+	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -46,16 +48,27 @@
 
 	<div class="container">
 		<div id="header" class="sixteen columns">
-			<img id="banner" src="images/banner.jpg">
-			<h2 id="subtitle">Promoting and distributing independent art on and off the web.</h2>
+			<!--<img id="banner" src="images/banner.jpg" alt="Windy Tunnel Media">--> 
+			<!--<h1>Windy Tunnel Media</h1>-->
+			<!--<h2 id="subtitle">Promoting and distributing independent art on and off the web.</h2>--> 
 			<nav> 
-				<a href="http://www.windytunnel.co">home</a>
+				<a href="http://www.windytunnel.co" id="title">windy tunnel media</a>
+				<a id="artistslink">artists</a> 
 				<a href="http://blog.windytunnel.co">blog</a>
 				<a href="http://store.windytunnel.co">store</a> 
 			</nav> 
+			<div id="artists" class="selected initblank">
+				<a>Alexander Ross</a> 
+				<a href="http://www.windytunnel.co/halfs.html">The Halfs</a> 
+				<a>Missing Twin</a>
+				<a>Michael Brown</a> 
+				<a class="white">Nathaniel Noton-Freeman</a>
+				<a>Nick Pagan</a> 
+				<a>The Purest Cacophony</a> 
+			</div> 
 		</div>
 		
-		<div class="sixteen columsn"> 
+		<div class="sixteen columns"> 
 			<img class="artistbanner" src="images/nnfbanner.jpg">
 		</div> 
 		
@@ -89,11 +102,11 @@
 			</div> 
 		</div> 
 		
-		<div class="sixteen columsn"> 
-			<img id="divide" src="images/divide.jpg">
+		<div class="sixteen columns"> 
+			<!--<img id="divide" src="images/divide.jpg">--> 
 		</div> 
 		
-		<div class="sixteen columsn"> 
+		<div class="sixteen columns"> 
 			<h3> Dream & Seabirds </h3> 
 		</div> 
 		
@@ -124,7 +137,7 @@
 		</div> 
 		
 		<div class="sixteen columsn"> 
-			<img id="divide" src="images/divide.jpg">
+			<!--<img id="divide" src="images/divide.jpg">--> 
 		</div> 
 		
 		<div class="one-third column"> 
@@ -157,8 +170,8 @@
 		</div> 
 		
 		<div id="footer" class="sixteen columns"> 
-			<h6>Windy Tunnel Media All Rights Reserved 2013</h6> 
-			<h6 id="selfpromotion">Design by <a href="http://jasperboyd.com">Jasper Boyd</a></h6>
+			<h6>Windy Tunnel Media <span class="white">All Rights Reserved 2013</span></h6> 
+			<h6 id="selfpromotion">This site was handmade by <a href="http://jasperboyd.com">Jasper Boyd</a></h6>
 		</div>
 	</div><!-- container -->
 	

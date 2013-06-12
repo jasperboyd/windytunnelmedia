@@ -38,9 +38,6 @@ h3
 	-moz-border-radius-bottomleft: 25px;
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
-	border-left: 2px solid white; 
-	border-right: 2px  solid white; 
-	border-bottom: 2px solid white; 
 }
 
 #banner
@@ -48,10 +45,11 @@ h3
 	width: 100%;
 }
 
-#title
+a #title .selected, 
+a #title .selected:visited
 { 
-	font-size: 4em;
-	text-shadow: 3px 3px 3px #35315d;
+	font-size: 2em;
+	color: white; 
 } 
 
 #divide
@@ -86,9 +84,6 @@ h3
 	-moz-border-radius-topright: 25px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	border-left: 2px solid white; 
-	border-right: 2px  solid white; 
-	border-top: 2px solid white; 
 } 
 
 .content
@@ -151,19 +146,22 @@ button
 
 h2
 { 
+	font-size: 25px; 
 	font-weight: 300; 
+	text-align: center;
 } 
 
 h3
 {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 700; 
 }
 
 h6, 
-#selfpromotion a
+#selfpromotion a, 
+#selfpromotion a:visited
 {
-	color: white;
+	color: #35315d;
 	font-size: 12px;
 }
 
@@ -174,10 +172,12 @@ h4,
 h5,
 p,
 li,
-#footer a:hover,
-#header a:hover,
-.selected, 
-#selfpromotion
+#selfpromotion,
+#selfpromotion a:hover,
+#selfpromotion a:visited:hover,
+#header .artsel:hover,
+#header .artsel:visited:hover,
+.white
 {
 	color: white; 
 }
@@ -187,14 +187,26 @@ a
 {
 	font-size: 16px; 
 	font-weight: 300; 
-	line-height: 125%;
 }
 
-#footer a,
-#header a
-{
-	color: #4c4681;
-}
+#header #title:hover,
+#header #title:visited:hover, 
+#header .selected, 
+#header .selected:visited, 
+#header #artistslink:hover,
+#header #artistslink:visited:hover,
+#header .artsel, 
+#header .artsel:visited
+{ 
+	color: #35315d;
+} 
+
+#header a, 
+#header a:visited
+{ 
+	font-size: 40px;
+	color: white; 
+} 
 
 a, 
 a:visited
@@ -217,20 +229,35 @@ a:hover {
 	padding-top: 10px;
 } 
 
+.padbottom
+{
+	padding-bottom: 10px;
+} 
+
 .bold
 {
 	font-weight: 700;
 }
+
+.medium 
+{
+	font-size: 1.05em; 
+} 
 
 .big
 { 
 	font-size: 1.25em;
 } 
 
+.bigass
+{
+	font-size: 2em;
+}
+
 .small
 { 
 	font-size: .9em;
-} 
+}
 
 .initblank
 { 
@@ -238,16 +265,41 @@ a:hover {
 } 
 
 
-
 /* #Page Styles
 ================================================== */
 
-#artists a, 
-#support a, 
 #about p
 { 
-	font-size: 20px;
+	line-height: 150%;
+	padding-left: 5%;
+} 
+
+#artists
+{ 
+	display: inline; 
+	width: 200px;
+	
+} 
+
+#artists .white
+{ 
+	color: white; 
+} 
+
+#artists a, 
+#artists a:visited
+{ 
+	line-height: 200%;
+	font-size: 1.5em;
+	padding: 0 8px 0 8px;
+	color: #35315d;
 }
+
+#artists a:hover, 
+#artists a:visited:hover
+{ 
+	color: white;
+} 
 
 #featured
 { 
@@ -259,7 +311,7 @@ a:hover {
 	-moz-border-radius: 25px;
 	border-radius: 25px;
 	margin-bottom: 20px;
-	border: 2px solid white; 
+	text-align: center;
 } 
 
 #featured p 
@@ -270,22 +322,35 @@ a:hover {
 	font-weight: 700;
 } 
 
-#featured a, 
-#featured a:visited 
-{ 
-	color: #35315d;
-	font-weight: 700;
-} 
-
-#featured a:hover
-{ 
-	color: #4c4681;
-} 
-
-#featured h3 
+#featured h3, 
+#morecontent, 
+#morecontent:visited
 { 
 	font-family: 'Sail', cursive;
-	font-size: 3em;
+	font-size: 4em;
+	font-weight: 300;
+	color: #35315d;
+} 
+
+#join h3
+{
+	font-family: 'Sail', cursive;
+	font-size: 4em;
+	font-weight: 300;
+	color: white;
+}
+
+#morecontent:hover,
+#morecontent:visited:hover
+{ 
+	color: white;
+} 
+
+#join p, 
+#join a
+{
+	text-align: center;
+	line-height: 150%;
 } 
 
 #support ul
@@ -326,7 +391,7 @@ a:hover {
 
 .artistbanner
 {
-	width: 95%;
+	width: 100%;
 	display: block; 
 	margin: 0 auto; 
 	-webkit-border-radius: 20px;
