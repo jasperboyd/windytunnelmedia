@@ -40,6 +40,7 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link href='http://fonts.googleapis.com/css?family=Sail|Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -52,14 +53,20 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 
 <div id="page" class="hfeed site">
     <header id="masthead" class="site-header" role="banner">
-        <hgroup>
-    		 <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-    		 <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
-        <nav role="navigation" class="site-navigation main-navigation">
-        	<h1 class="assistive-text"><?php _e( 'Menu', 'shape' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', '_s' ); ?>"><?php _e( 'Skip to content', 'wttheme' );?></a></div> 	
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
+        	<nav> 
+				<a id="title" class="selected">windy tunnel media</a>
+				<a id="artistslink">artists</a> 
+				<a id="bloglink" href="http://blog.windytunnel.co">blog</a>
+				<a id="storelink" href="http://store.windytunnel.co">store</a> 
+			</nav> 
+			<div id="artists" class="selected initblank">
+				<a>Alexander Ross</a> 
+				<a href="http://www.windytunnel.co/halfs.html">The Halfs</a> 
+				<a>Missing Twin</a>
+				<a>Michael Brown</a> 
+				<a href="http://www.windytunnel.co/nnf.html">Nathaniel Noton-Freeman</a>
+				<a>Nick Pagan</a> 
+				<a>The Purest Cacophony</a> 
+			</div> 
     </header><!-- #masthead .site-header -->
 <div id="main" class="site-main">

@@ -587,3 +587,172 @@ object {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+/* Custom Styles
+------------------------------------------------- */ 
+body
+{ 
+	background: #35315d;
+} 
+
+.assistive-text
+{ 
+	display: none; 
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li, 
+#selfpromotion, 
+button
+{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+a 
+{ 
+	text-decoration: none; 
+} 
+
+/*HEADER*/ 
+#masthead 
+{ 
+	background: #409ae6;
+	width: 100%;
+	text-align: center; 
+} 
+
+#title, 
+#artistslink, 
+#storelink, 
+#title:visited,
+#artistslink:visited,
+#storelink:visited 
+{ 
+	font-size:  2.5em;	
+	margin-right: 10px;
+	display: inline-block;
+	line-height: 125%;
+	font-family: 'Sail', cursive;
+	color: white; 
+} 
+
+#title:hover, 
+#artistslink:hover, 
+#storelink:hover
+{ 
+	color: #35315d;
+} 
+
+#bloglink, 
+#bloglink:visited 
+{ 
+	font-size:  2.5em;	
+	margin-right: 10px;
+	display: inline-block;
+	line-height: 125%;
+	font-family: 'Sail', cursive;
+	color: #35315d;
+} 
+
+#artists a, 
+#artists a:visited
+{
+	display: inline-block;
+	color: #35315d;
+	font-size: 1.25em;
+	margin: 0px 10px 0px 10px;
+} 
+
+#artists a:hover, 
+p
+{ 
+	color: white;
+} 
+/* END HEADER */ 
+
+/* CONTENT */ 
+
+#primary
+{ 
+	margin: 0 auto; 
+	max-width: 600px; 
+} 
+
+#main a:hover, 
+#main a:visited:hover
+{ 
+	color: #4c4681
+} 
+
+#main a,
+#main a:visited
+{ 
+	color: white; 
+} 
+
+.entry-title {
+	text-align: center; 
+	color: white; 
+	font-size: 2em; 
+	font-weight: 700; 
+} 
+
+.entry-meta { 
+	color: #409ae6;
+	text-align: center; 
+}
+
+.widget-area { 
+	padding: 20px 0; 
+	background: #4c4681;
+} 
+
+#secondary
+{ 
+	/*height: 800px;*/ 
+}
+
+#secondary #search-2 { 
+	float: none; 
+	width: 100%; 
+}
+
+#s { 
+	display: block; 
+	margin: 0 auto; 
+	width: 80%; 
+	max-width: 600px; 
+	height: 30px; 
+	font-size: 20px; 
+	text-align: center; 
+	color: #409ae6;
+} 
+
+#secondary aside
+{
+	text-align: center; 
+	color: #409ae6;
+}
+
+#secondary ul
+{ 
+	list-style-type: none;
+	display:block; 
+	margin: 0 auto; 
+	width: 90%;
+	max-width: 300px; 
+	min-width: 100px; 
+} 
+
+#tertiary 
+{ 
+	display: none; 
+} 
+
