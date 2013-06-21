@@ -242,6 +242,16 @@ a:hover {
 	padding-bottom: 10px;
 } 
 
+.margtop
+{
+	margin-top: 30px; 
+} 
+
+.margbottom
+{
+	margin-bottom: 30px; 
+} 
+
 .bold
 {
 	font-weight: 700;
@@ -388,6 +398,14 @@ a:hover {
 	width: 100%; 
 	height: 100%; 
 	margin-top: 20px; 
+	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+
+.albumdetails
+{
+	text-align: center; 
 }
 
 #featuredart
