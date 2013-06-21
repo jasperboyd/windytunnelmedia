@@ -202,7 +202,9 @@ a
 #header #bloglink:hover, 
 #header #bloglink:visited:hover,
 #header #storelink:hover, 
-#header #storelink:visited:hover
+#header #storelink:visited:hover, 
+#header #musiclink:hover, 
+#header #musiclink:visited:hover
 { 
 	color: #35315d;
 } 
@@ -284,7 +286,7 @@ a:hover {
 { 
 	display: inline; 
 	width: 200px;
-	
+	margin-bottom: 20px; 
 } 
 
 #artists .white
@@ -377,14 +379,16 @@ a:hover {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-} 
-
-#sotf, 
-#iwnf
-{
 	max-width: 250px;
 	display: block; 
 	margin: 0 auto;
+} 
+
+.albumart
+{
+	width: 100%; 
+	height: 100%; 
+	margin-top: 20px; 
 }
 
 #featuredart
