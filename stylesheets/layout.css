@@ -286,7 +286,7 @@ a:hover {
 { 
 	display: inline; 
 	width: 200px;
-	margin-bottom: 20px; 
+	
 } 
 
 #artists .white
@@ -298,9 +298,8 @@ a:hover {
 #artists a:visited
 { 
 	display: inline-block;
-	line-height: 200%;
 	font-size: 1.5em;
-	padding: 0 8px 0 8px;
+	padding: 10px 8px 30px 8px;
 	color: #35315d;
 }
 
