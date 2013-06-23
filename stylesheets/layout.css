@@ -108,6 +108,7 @@ nav {
 nav a {
 	font-size:  2em;	
 	margin-right: 10px;
+	letter-spacing: -1px; 
 	display: inline-block;
 	line-height: 125%;
 	font-family: 'Sail', cursive;
@@ -257,6 +258,11 @@ a:hover {
 	font-weight: 700;
 }
 
+.lightpurple
+{ 
+	color: #4c4681;
+} 
+
 .medium 
 {
 	font-size: 1.05em; 
@@ -277,6 +283,16 @@ a:hover {
 	font-size: .9em;
 }
 
+.light
+{
+	font-weight: 300; 
+} 
+
+.tiny
+{
+	font-size: .8em;
+}
+
 .initblank
 { 
 	display: none;
@@ -286,16 +302,29 @@ a:hover {
 /* #Page Styles
 ================================================== */
 
-#about p
+#basecontent, 
+#morecontent
 { 
 	line-height: 150%;
+	letter-spacing: 1px; 
 	padding-left: 5%;
+	font-weight: 300; 
+}
+
+#morecontent
+{
+  font-size: 1.4em;
 } 
+
+#moreabout
+{
+	text-align: center; 
+}
 
 #artists
 { 
 	display: inline; 
-	width: 200px;
+	margin-bottom: 25px; 
 	
 } 
 
@@ -308,8 +337,10 @@ a:hover {
 #artists a:visited
 { 
 	display: inline-block;
-	font-size: 1.5em;
-	padding: 10px 8px 30px 8px;
+	font-size: 1.25em;
+	font-weight: 400; 
+	letter-spacing: -.5px; 
+	padding: 10px;
 	color: #35315d;
 }
 
@@ -341,8 +372,8 @@ a:hover {
 } 
 
 #featured h3, 
-#morecontent, 
-#morecontent:visited
+#nextlink, 
+#nextlink:visited
 { 
 	font-family: 'Sail', cursive;
 	font-size: 4em;
@@ -358,8 +389,8 @@ a:hover {
 	color: white;
 }
 
-#morecontent:hover,
-#morecontent:visited:hover
+#morebutton:hover,
+#morebutton:visited:hover
 { 
 	color: white;
 } 

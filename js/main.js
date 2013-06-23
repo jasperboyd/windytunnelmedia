@@ -3,10 +3,10 @@ $(document).ready(function() {
 	var $artistslink = $('#artistslink'); 
 	
 	$artistslink.click(function(){
-		$artists.fadeToggle(100); 
+		$artists.slideToggle(500); 
 		$artistslink.toggleClass('artsel');
 	}); 
 	
-	$artists.css('display', 'none'); 
+	$artists.slideToggle(0); 
 });
 

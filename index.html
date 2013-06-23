@@ -21,9 +21,10 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link href='http://fonts.googleapis.com/css?family=Sail|Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,300,300italic|Sail' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
 	<script src="js/main.js"></script>  
+	<script src="js/home.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -53,51 +54,78 @@
 			<nav> 
 				<a id="title" class="selected">windy tunnel media</a>
 				<a id="artistslink">artists</a> 
-				<a id="musiclink" href="http://www.windytunnel.co/music.html"> music </a> 
+				<a id="musiclink" href="/music"> music </a> 
 				<a id="bloglink" href="http://blog.windytunnel.co">blog</a>
 				<a id="storelink" href="http://store.windytunnel.co">store</a> 
 			</nav> 
 			<div id="artists" class="selected initblank">
 				<!--<a>Alexander Ross</a>--> 
-				<a href="http://www.windytunnel.co/halfs.html">The Halfs</a> 
-				<a href="http://www.windytunnel.co/missingtwin.html">Missing Twin</a>
+				<a href="/thehalfs">The Halfs</a> 
+				<a href="/missingtwin">Missing Twin</a> 
 				<!--<a>Michael Brown</a>--> 
-				<a href="http://www.windytunnel.co/nnf.html">Nathaniel Noton-Freeman</a>
-				<a href="http://www.windytunnel.co/pagan.html">Nick Pagan</a>
-				<a href="http://www.windytunnel.co/tpc.html">The Purest Cacophony</a> 
+				<a href="/nathanielnotonfreeman">Nathaniel Noton-Freeman</a> 
+				<a href="/nickpagan">Nick Pagan</a> 
+				<a href="/thepurestcacophony">The Purest Cacophony</a> 
 			</div> 
 		</div>
 	
 		<div id="about" class="sixteen columns">
 			<div class="content">
-			<p class="padtop bigass"> 
-				<span class="bold">We</span> are an DIY media publisher based in Worcester, MA with artists
-				from all over New England. We are dedicated to creating a digital archive of the best
-				local art and making it available all over the world. <br /> 
-				<!--<a id="moreabout" class="medium">Learn more...</a>--> 
+			<p id="basecontent" class="padtop bigass"> 
+				We are an DIY media publisher based in Worcester, MA with artists
+				from all over New England. We are dedicated to bringing their music to you.<br /> 
 			</p>
-			<p class="initblank"> 
-				WTM was founded in May of 2013 by Jasper Boyd. Blah blah blah
+			<p id="morecontent" class="padtop initblank"> 
+				The inspiration for the creation of Windy Tunnel Media came from a gift I was given 
+				by my grandmother, David Byrne's book "How Music Works". In the book, Byrne speaks 
+				at great length about how the music industry is transforming. The recording giants of
+				last century are wilting away. Thanks to technology musicians don't need the huge
+				support systems that record companies used to suppy. Artists can do all of that work 
+				for themselves and DIY labels like WTM and countless others are replacing
+				those buildings. <br /> 
+				<br /> 
+				
+				Most simply Windy Tunnel Media is a symbiotic collective of aspiring musicians. The
+				reason for this is that I've never viewed music as a competition and I wanted WTM to 
+				embody that belief. Therefore, WTM works not only within itself but with other artists
+				from other DIY labels, in all aspects of the process. By listening and supporting just a single
+				WTM artist you are in effect supporting the entire organization.<br /> 
+				<br /> 
+				
+				Although WTM is a profitless publisher in the more tradition sense of the word "profit", 
+				by <a href="/share" class="medium">sharing</a> our label you are supporting the most fundamental part of the label, the  
+				artists. So please, <a href="/music" class="medium">have a listen</a> on our music page and give some feedback. 
+				If you want to do even more consider <a href="/donate" class="medium"> donating </a>. <br /> 
+				<br /> 
+				
+				Thank you,<br /> 
+				<a class="medium" href="mailto:jasper@windytunnel.co">Jasper</a><br /> 
+				Founder  
 			</p> 
+			<p id="moreabout">
+				<a id="morelink">More</a>
+			</p>
 			</div>
 		</div>
 		
 		<div id="featured" class="two-thirds column">
+			<h3 class="padtop">blown in</h3> 
+			<p class="tiny lightpurple">Pause before hitting next.</p>
 			<div id="featuredone" class="content"> 
-			<h3>blown in</h3> 
-			<img id="featuredart" class="padtop" src="images/dream.jpg"> 
-			<iframe width="200" height="100" style="position: relative; display: block; width: 300px; height: 100px; margin: 0 auto;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3186237133/size=grande/bgcol=FFFFFF/linkcol=ffffff/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://whorl.bandcamp.com/album/dream">DREAM by Nathaniel Noton-Freeman</a></iframe>
+				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=3186237133/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://whorl.bandcamp.com/album/dream">DREAM by Nathaniel Noton-Freeman</a></iframe>
 			</div> 
-			<div id="featuredone" class="content initblank"> 
-			<h3>Featured</h3> 
-			<p class="center padtop"> 
-					
-			</p> 
+			<div id="featuredtwo" class="content initblank"> 
+				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=1535102776/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://music.thepureca.co/album/i-will-not-fall">I Will Not Fall by The Purest Cacophony</a></iframe>
 			</div> 
-			<div class="content padbottom">
-				<a id="morecontent">more!</a>
+			<div id="featuredthree" class="content initblank"> 
+				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=3769184858/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://missingtwin.bandcamp.com/album/brothers">Brothers by Missing Twin</a></iframe>
 			</div> 
+			<div id="featuredfour" class="content initblank">
+				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=2490592366/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://thehalfs.bandcamp.com/album/shut-off-the-fan">Shut Off The Fan! by The Halfs</a></iframe>
+			</div>
+			<a id="nextlink">next!</a>
 		</div> 
+		
 		<div id="join" class="one-third column">
 			<div class="content">
 			<h3>join us</h3> 
