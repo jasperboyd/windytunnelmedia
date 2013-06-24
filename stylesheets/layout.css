@@ -196,7 +196,9 @@ li,
 #header #storelink:hover, 
 #header #storelink:visited:hover, 
 #header #musiclink:hover, 
-#header #musiclink:visited:hover
+#header #musiclink:visited:hover,
+#header .selected, 
+#header .selected:visited 
 {
 	color: white; 
 }
@@ -222,8 +224,6 @@ a
 
 
 #header #title,
-#header .selected, 
-#header .selected:visited 
 #header .titlesel, 
 #header .titlesel
 { 

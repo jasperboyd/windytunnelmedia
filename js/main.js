@@ -14,6 +14,16 @@ $(document).ready(function() {
 		}
 	}); 
 	
+	$artistslink.mouseover(function(){
+		$artistslink.css('color', 'white');
+	});
+	
+	$artistslink.mouseleave(function(){
+		if (!$white){
+			$artistslink.css('color', '#4c4681');
+		}
+	}); 
+	
 	$artists.slideToggle(0); 
 });
 
