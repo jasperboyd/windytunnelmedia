@@ -45,12 +45,14 @@ h3
 	width: 100%;
 }
 
-a #title .selected, 
-a #title .selected:visited
-{ 
-	font-size: 2em;
-	color: white; 
-} 
+#header #title
+{
+	margin-top: .5em;
+	font-size: 3em;
+	letter-spacing: -3px; 
+	padding-right: .5em;
+	font-family: 'Sail', cursive;
+}
 
 #divide
 {
@@ -105,10 +107,14 @@ nav {
 	padding-bottom: 10px; 
 } 
 
-nav a {
+#artistslink,
+#musiclink,
+#bloglink,
+#storelink
+{
 	font-size:  2em;	
 	margin-right: 10px;
-	letter-spacing: -1px; 
+	letter-spacing: 2px; 
 	display: inline-block;
 	line-height: 125%;
 	font-family: 'Sail', cursive;
@@ -180,7 +186,17 @@ li,
 #selfpromotion a:visited:hover,
 #header .artsel:hover,
 #header .artsel:visited:hover,
-.white
+.white,
+#header #title:hover,
+#header #title:visited:hover,
+#header #artistslink:hover,
+#header #artistslink:visited:hover,
+#header #bloglink:hover, 
+#header #bloglink:visited:hover,
+#header #storelink:hover, 
+#header #storelink:visited:hover, 
+#header #musiclink:hover, 
+#header #musiclink:visited:hover
 {
 	color: white; 
 }
@@ -192,26 +208,30 @@ a
 	font-weight: 300; 
 }
 
-#header #title:hover,
-#header #title:visited:hover, 
+#header #artistslink,
+#header #artistslink:visited, 
+#header #bloglink, 
+#header #bloglink:visited, 
+#header #storelink, 
+#header #storelink:visited,
+#header #musiclink,
+#header #musiclink:visited{
+	color: #4c4681
+}
+
+
+
+#header #title,
 #header .selected, 
-#header .selected:visited, 
-#header #artistslink:hover,
-#header #artistslink:visited:hover,
-#header .artsel, 
-#header .artsel:visited,
-#header #bloglink:hover, 
-#header #bloglink:visited:hover,
-#header #storelink:hover, 
-#header #storelink:visited:hover, 
-#header #musiclink:hover, 
-#header #musiclink:visited:hover
+#header .selected:visited 
+#header .titlesel, 
+#header .titlesel
 { 
 	color: #35315d;
 } 
 
-#header a, 
-#header a:visited
+nav a, 
+nav a:visited
 { 
 	font-size: 40px;
 	color: white; 
@@ -328,6 +348,12 @@ a:hover {
 	
 } 
 
+#artists a:hover,
+#artists a:visited:hover
+{
+	color: #4c4681;
+}
+
 #artists .white
 { 
 	color: white; 
@@ -343,12 +369,6 @@ a:hover {
 	padding: 10px;
 	color: #35315d;
 }
-
-#artists a:hover, 
-#artists a:visited:hover
-{ 
-	color: white;
-} 
 
 #featured
 { 
