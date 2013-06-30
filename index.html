@@ -22,6 +22,13 @@
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,300,300italic|Sail' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	#mc_embed_signup{background:#409ae6; color:white; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		#mc_embed_signup .email { width: 80%; margin: 0 auto;} 
+	</style>
+	
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
 	<script src="js/main.js"></script>  
 	<script src="js/home.js"></script>
@@ -36,7 +43,14 @@
 </head>
 <body>
 
-
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Primary Page Layout
 	================================================== -->
@@ -50,10 +64,12 @@
 			<!--<h2 id="subtitle">Promoting and distributing independent art on and off the web.</h2>--> 
 			<nav> 
 				<a id="title" class="titlesel" href="/">windy tunnel media</a>
-				<a id="artistslink">artists</a> 
-				<a id="musiclink" href="/music"> music </a> 
-				<a id="bloglink" href="http://blog.windytunnel.co">blog</a>
-				<a id="storelink" href="http://store.windytunnel.co">store</a> 
+				<div id="submenu"> 
+					<a id="artistslink">artists</a> 
+					<a id="musiclink" href="/music"> music </a> 
+					<a id="bloglink" href="http://blog.windytunnel.co">blog</a>
+					<a id="storelink" href="http://store.windytunnel.co">store</a> 
+				</div>
 			</nav> 
 			<div id="artists" class="selected initblank">
 				<!--<a>Alexander Ross</a>--> 
@@ -68,11 +84,13 @@
 	
 		<div id="about" class="sixteen columns">
 			<div class="content">
-			<p id="basecontent" class="padtop bigass justify"> 
+			<h2>about wtm</h2>
+			<p id="basecontent" class="justify"> 
 				We are a DIY media publisher based in Worcester, MA with artists
 				from all over New England. We are dedicated to bringing their music to you.<br /> 
+				<br />
 			</p>
-			<p id="morecontent" class="padtop initblank justify"> 
+			<p id="morecontent" class="initblank justify"> 
 				The inspiration for the creation of Windy Tunnel Media came from a gift I was given 
 				by my grandmother, David Byrne's book "How Music Works". In the book, Byrne speaks 
 				at great length about how the music industry is transforming. The recording giants of
@@ -90,9 +108,9 @@
 				<br /> 
 				
 				Although WTM is a profitless publisher in the more traditional sense of the word "profit", 
-				by <a href="/share" class="medium">sharing</a> our label you are supporting the most fundamental part of the label, the  
+				by <a id="share_link">sharing</a> our label you are supporting the most fundamental part of the label, the  
 				artists. So please, <a href="/music" class="medium">have a listen</a> on our music page and give some feedback. 
-				If you want to do even more consider <a href="/donate" class="medium"> donating </a>. <br /> 
+				If you want to do even more consider <a id="donate_link"> donating </a>. <br /> 
 				<br /> 
 				
 				Thank you,<br /> 
@@ -106,7 +124,7 @@
 		</div>
 		
 		<div id="featured" class="two-thirds column">
-			<h3 class="padtop">blown in</h3> 
+			<h2 class="padtop">blown in</h2> 
 			<p class="tiny lightpurple">Pause before hitting next.</p>
 			<div id="featuredone" class="content"> 
 				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=3186237133/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://whorl.bandcamp.com/album/dream">DREAM by Nathaniel Noton-Freeman</a></iframe>
@@ -120,66 +138,78 @@
 			<div id="featuredfour" class="content initblank">
 				<iframe style="border: 0; width: 300px; height: 300px;" src="http://bandcamp.com/EmbeddedPlayer/album=2490592366/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://thehalfs.bandcamp.com/album/shut-off-the-fan">Shut Off The Fan! by The Halfs</a></iframe>
 			</div>
-			<a id="nextlink">next!</a>
+			<a id="nextlink">next</a>
 		</div> 
 		
 		<div id="join" class="one-third column">
 			<div class="content">
-			<h3>join us</h3> 
+			<h2>join us</h2> 
 			</div> 
 			<div class="content"> 
 			<img id="logo" src="images/logop.jpg">
 		    </div> 
 		    <div class="content"> 
-		    <p class="big">
+		    <p>
 				<span class="bold">If you make art of any kind</span> <br /> 
 				<a class="bigass" href="mailto:jasper@windytunnel.co">get in touch!</a>
 			</p> 
 			</div>
 		</div>
 		
-		<div class="sixteen columns">
-			<!--<img id="divide" src="images/divide.jpg">--> 
+		<div id="artists2" class="two-thirds column">
+			<h2>The Artists</h2> 
+			<ul>
+				<li><a href="/thehalfs">The Halfs</a></li> 
+				<li><a href="/missingtwin">Missing Twin</a></li>  
+				<li><a href="/nathanielnotonfreeman">Nathaniel Noton-Freeman</a></li> 
+				<li><a href="/nickpagan">Nick Pagan</a></li>
+				<li><a href="/thepurestcacophony">The Purest Cacophony</a></li>
+			</ul>
+		</div> 
+		
+		<div id="support" class="one-third column">
+			<h2>Support</h2>
+			
+			<h3>Facebook</h3>
+			<div class="fb-like" data-href="http://www.facebook.com/windytunnelmedia" data-send="false" data-width="450" data-show-faces="true" data-font="arial" data-action="recommend"></div>
+		
+			<h3>Newsletter</h3>
+			<p class="tiny center lightpurple">Press enter to subscribe!</p>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="http://thepureca.us4.list-manage.com/subscribe/post?u=883c452b158a54cb5f217604f&amp;id=4aece83aff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</form>
+			</div>
+			<!--End mc_embed_signup-->
 		</div>
 		
-		<div class="one-third column"> 
-		<div id="support" class="content">
-			<h3>Get Involved</h3> 
-			<ul class="padtop"> 
-				<li><a>Like Us</a></li>
-				<li><a>Join Our Newsletter</a><li>
-				<li><a>Read Our Blog</a></li>  
-				<li><a>Browse Our Store</a></li> 
-			</ul> 
-			</div>
+		<div id="donate" class="sixteen columns"> 
+			<h2>3 Ways to Help</h2>
+			<h3>Pay the Musicians</h3>
+			<p class="justify">
+				Being a WTM Musician isn't exactly profitable.
+				For the most part all the releases are pay-what-you-wish and
+				the grand majority of people opt for the free download option.
+				If you find yourself really liking any one particular artist's 
+				music here please consider giving some money even if it's 
+				only a couple dollars. 
+			</p>
+			<h3>Donate to Windy Tunnel</h3> 
+			<p>
+				WTM although extremely lightweight costs money too. Server 
+				space and enormous amount of free work went into the creation 
+				of this website. To help keep us running any small contribution 
+				can help.
+			</p>
+			<h3>If Nothing Else</h3>
+			<p> 
+				Help spread the word! <a href="http://www.facebook.com/windytunnelmedia" target="_blank">Like</a> and
+				share our page on facebook. <a href="http://blog.windytunnel.co">Read</a> and link to our blog. Most importantly
+				give us <a href="mailto:jasper@windytunnel.co">feedback</a>!
+			</p>
 		</div> 
-		
-		<div class="one-third column"> 
-		<div class="content">
-			<h3>Powered By</h3> 
-			<ul class="padtop center tiny"> 
-				<li>Bandcamp</li> 
-				<li>Dreamhost</li>
-				<li>Wordpress</li> 
-				<li>Tictail</li> 
-				<li>Github</li> 
-				<li>Skeleton</li>
-			</ul> 
-			</div>
-		</div> 
-		
-		<div class="one-third column"> 
-		<div class="content">
-			<h3>Support Us</h3> 
-			<p class="padtop justify">
-				We are looking to become a 501c3 non-profit, unfortunately
-				we cannot afford the costs of gaining this status. If you 
-				believe in what we do please <a>donate</a> or make a purchase
-				in our <a>store</a>. 
-			</p> 
-			</div>
-		</div> 
-		
 		
 		<div id="footer" class="sixteen columns"> 
 			<h6>Windy Tunnel Media <span class="white">All Rights Reserved 2013</span></h6> 

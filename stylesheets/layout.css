@@ -47,8 +47,9 @@ h3
 
 #header #title
 {
-	margin-top: .5em;
-	font-size: 3em;
+	padding-top: 12px;
+	font-size: 68.664px;
+	text-align: center;
 	letter-spacing: -3px; 
 	padding-right: .5em;
 	font-family: 'Sail', cursive;
@@ -61,12 +62,6 @@ h3
 	max-width: 400px; 
 	width: 100%;
 }
-
-#subtitle 
-{ 
-	font-size: 1.25em;
-	font-style: italic; 
-} 
 
 #header,
 #footer
@@ -87,6 +82,11 @@ h3
 	border-top-right-radius: 25px;
 } 
 
+iframe
+{
+	margin: 0 auto;
+}
+
 .content
 {
 	padding-top: 10px; 
@@ -104,6 +104,17 @@ nav {
 	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px; 
+	color: #4c4681;
+} 
+
+#submenu {
+	background-color: #4c4681;
+	width: 100%;
+} 
+
+#artists a {
+	text-transform: uppercase; 
+	letter-spacing: 2px;
 } 
 
 #artistslink,
@@ -119,26 +130,12 @@ nav {
 	font-family: 'Sail', cursive;
 } 
 
-button { 
-	margin: 0 auto; 
-	display: block;
-	border: 2px solid white; 
-	color: white; 
-	background-color: #409ae6;
-} 
-
-button:hover { 
-	background-color: #35315d;
-	border: 2px solid white; 
-	color: white;
-} 
-
 h1
 {
 	font-family: 'Sail', cursive;
 }
-
-h2, 
+ 
+h2,
 h3,
 h4,
 h5,
@@ -154,15 +151,19 @@ button
 
 h2
 { 
-	font-size: 25px; 
-	font-weight: 300; 
+	font-size: 36.623px;
+	letter-spacing: 4px;
+	font-weight: 800; 
 	text-align: center;
+	text-transform: uppercase; 
+	text-shadow: 1px 1px 1px black;
 } 
 
 h3
 {
 	font-size: 20px;
-	font-weight: 700; 
+	font-weight: 400; 
+	margin-top: 14px;
 }
 
 h6, 
@@ -205,8 +206,13 @@ li,
 p, 
 a
 {
-	font-size: 16px; 
+	font-size: 14px; 
+	line-height: 1.5em;
 	font-weight: 300; 
+}
+
+p {
+	letter-spacing: 1px;
 }
 
 #header #artistslink,
@@ -217,7 +223,7 @@ a
 #header #storelink:visited,
 #header #musiclink,
 #header #musiclink:visited{
-	color: #4c4681
+	color: white;
 }
 
 
@@ -232,7 +238,7 @@ a
 nav a, 
 nav a:visited
 { 
-	font-size: 40px;
+	font-size: 29.298px;
 	color: white; 
 } 
 
@@ -282,26 +288,6 @@ a:hover {
 	color: #4c4681;
 } 
 
-.medium 
-{
-	font-size: 1.05em; 
-} 
-
-.big
-{ 
-	font-size: 1.25em;
-} 
-
-.bigass
-{
-	font-size: 2em;
-}
-
-.small
-{ 
-	font-size: .9em;
-}
-
 .justify
 { 
 	text-align: justify;
@@ -325,6 +311,19 @@ a:hover {
 
 /* #Page Styles
 ================================================== */
+#about { 
+	background-color: #4c4681;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin: 14px auto;
+} 
+
+#about p {
+	width: 70%; 
+	padding 0 15%;
+	margin: 0 auto;
+}
 
 #basecontent, 
 #morecontent
@@ -335,9 +334,14 @@ a:hover {
 	font-weight: 300; 
 }
 
+#basecontent 
+{
+	font-size: 18px;
+}
+
 #morecontent
 {
-  font-size: 1.4em;
+  font-size: 14.4px;
 } 
 
 #moreabout
@@ -348,14 +352,16 @@ a:hover {
 #artists
 { 
 	display: inline; 
-	margin-bottom: 25px; 
+	margin-bottom: 25px;
+	background-color: #35315d; 
+	width: 100%;
 	
 } 
 
 #artists a:hover,
 #artists a:visited:hover
 {
-	color: #4c4681;
+	color: white;
 }
 
 #artists .white
@@ -367,14 +373,24 @@ a:hover {
 #artists a:visited
 { 
 	display: inline-block;
-	font-size: 1.25em;
 	font-weight: 400; 
-	letter-spacing: -.5px; 
 	padding: 10px;
-	color: #35315d;
+	color: #409ae6;
 }
 
-#featured
+#artists2 { 
+	text-align: center;
+} 
+
+#artists2 li
+{
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+#featured,
+#support
 { 
 	 box-sizing:border-box;
       -moz-box-sizing:border-box;
@@ -395,23 +411,14 @@ a:hover {
 	font-weight: 700;
 } 
 
-#featured h3, 
 #nextlink, 
 #nextlink:visited
 { 
-	font-family: 'Sail', cursive;
-	font-size: 4em;
-	font-weight: 300;
+	font-weight: 800;
+	font-size: 18.75px;
 	color: #35315d;
+	text-transform: uppercase; 
 } 
-
-#join h3
-{
-	font-family: 'Sail', cursive;
-	font-size: 4em;
-	font-weight: 300;
-	color: white;
-}
 
 #morebutton:hover,
 #morebutton:visited:hover
@@ -430,6 +437,23 @@ a:hover {
 { 
 	text-align: center;
 } 
+
+#donate 
+{ 
+	padding-top: 20px;
+	background-color: #4c4681;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+#donate p 
+{
+	padding: 0 10px;
+	max-width: 600px;
+	margin: 14px auto;
+}
 
 #nnf, 
 #dream, 

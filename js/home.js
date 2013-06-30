@@ -5,22 +5,45 @@ $(document).ready(function() {
 	var $moreopen = false; 
 	
 	var $nextlink = $('#nextlink');
+	var $about = $('#about');
+	var $support = $('#support'); 
+	var $donate = $('#donate');
+	var $featured = $('#featured');
 	var $featuredone = $('#featuredone');
 	var $featuredtwo = $('#featuredtwo');
 	var $featuredthree = $('#featuredthree');
 	var $featuredfour = $('#featuredfour');
 	var $featuredsel = 0; 
 	
+	var $donate_link = $('#donate_link');
+	var $share_link = $('#share_link');
+	
 	$more.click(function(){
 		if ($moreopen){
 			$moreopen = false; 
 			$basecontent.animate({
-				fontSize:"2em"}, 300);
+				fontSize:"22.5px"}, 300, function(){
+    				$about.animate({ width : '70%' }, 300, function(){
+    					$about.animate({ padding : '0 15%' }, 200, function(){
+    						$('html, body').animate({
+         						scrollTop: $featured.offset().top
+     							}, 500);
+    						});
+    					});
+					});
 			$more.text("More"); 
 		} else { 
 			$moreopen = true; 
 			$basecontent.animate({
-				fontSize:"1.5em"}, 300); 
+				fontSize:"14.4px"}, 300, function(){
+					$about.animate({ width : '80%' }, 300, function(){
+					$about.animate({ padding : '0 10%' }, 200, function(){
+    						$('html, body').animate({
+         						scrollTop: $about.offset().top
+     							}, 500);
+    						});
+    					});
+				}); 
 			$more.text("Less");
 		} 
 		$morecontent.slideToggle(300); 
@@ -48,13 +71,29 @@ $(document).ready(function() {
 			break; 
 		case 3:
 			$featuredfour.slideToggle(300, function(){
-				$featuredone.slideToggle(300); 
+					$featuredone.slideToggle(300, function(){
+						$('html, body').animate({
+         					scrollTop: $support.offset().top
+     						}, 500, function(){	
+     					});
+					}); 
 			});
-			$featuredsel = 0; 
+     		$featuredsel = 0;
 			break; 
 		default: 
 			break;
 		} 
 	}); 
 	
+	$donate_link.click(function(){
+		$('html, body').animate({
+         					scrollTop: $donate.offset().top
+     						}, 500);
+	});
+	
+	$share_link.click(function(){ 
+		$('html, body').animate({
+         					scrollTop: $support.offset().top
+     						}, 500);
+	});
 });

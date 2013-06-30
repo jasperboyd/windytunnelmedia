@@ -6,21 +6,21 @@ $(document).ready(function() {
 	$artistslink.click(function(){
 		$artists.slideToggle(500); 
 		if ($white) {
-			$artistslink.css('color', '#4c4681');
+			$artistslink.css('color', 'white');
 			$white = false; 
 		} else {
-			$artistslink.css('color', 'white');
+			$artistslink.css('color', '#409ae6');
 			$white = true; 
 		}
 	}); 
 	
 	$artistslink.mouseover(function(){
-		$artistslink.css('color', 'white');
+		$artistslink.css('color', '#409ae6');
 	});
 	
 	$artistslink.mouseleave(function(){
 		if (!$white){
-			$artistslink.css('color', '#4c4681');
+			$artistslink.css('color', 'white');
 		}
 	}); 
 	
