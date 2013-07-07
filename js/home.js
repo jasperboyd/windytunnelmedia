@@ -22,7 +22,7 @@ $(document).ready(function() {
 		if ($moreopen){
 			$moreopen = false; 
 			$basecontent.animate({
-				fontSize:"22.5px"}, 300, function(){
+				fontSize:"22.5px", lineHeight: '150%'}, 300, function(){
     				$about.animate({ width : '70%' }, 300, function(){
     					$about.animate({ padding : '0 15%' }, 200, function(){
     						$('html, body').animate({
@@ -35,8 +35,8 @@ $(document).ready(function() {
 		} else { 
 			$moreopen = true; 
 			$basecontent.animate({
-				fontSize:"14.4px"}, 300, function(){
-					$about.animate({ width : '80%' }, 300, function(){
+				fontSize:"14.4px", lineHeight: '200%'}, 300, function(){
+					$about.animate({ width : '80%'}, 300, function(){
 					$about.animate({ padding : '0 10%' }, 200, function(){
     						$('html, body').animate({
          						scrollTop: $about.offset().top
